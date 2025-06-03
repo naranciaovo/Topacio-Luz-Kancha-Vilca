@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mi primera página web. Conoce a Topita Bonita y su aprendizaje en desarrollo web." />
+  <title>Mi Primera Página Web</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    header {
+      background-color: #fb8c00;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffa726;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin: 2rem auto;
+      max-width: 1000px;
+      max-height: 1500px;
+      background-color: #fff3e0;
+      border: 1px solid #ffa726;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(255, 138, 0, 0.1);
+    }
+   
+
+    section h2 {
+      color: #fb8c00;
+      margin-top: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .imagen-container {
+      background: url("topi.jpeg") center center;
+      background-size: cover;
+      height: 500px;
+      width: 500px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .texto {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .cuadrados {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .carta {
+      background-color: white;
+      border: 2px solid #ffa726;
+      border-radius: 10px;
+      padding: 1rem;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      box-shadow: 0 4px 8px rgba(255, 167, 38, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .carta:hover {
+      transform: scale(1.03);
+    }
+
+    .carta h3 {
+      color: #fb8c00;
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #fb8c00;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    button {
+      background-color: #ffa726;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #fb8c00;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .imagen-container {
+        width: 80%;
+        height: 250px;
+      }
+
+      .texto {
+        padding-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi página</h1>
+    <p>Diseñada con amor y colores cálidos 🍊</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#acerca-de-mi">Sobre mí</a>
+    <a href="#">Educa</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="acerca-de-mi">
+      <div class="container">
+        <div class="imagen-container" role="img" aria-label="Imagen de Topita Bonita"></div>
+        <div class="texto">
+          <h2>Conoce más acerca de Topita </h2>
+          <p> 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At unde dolorum ut veritatis atque illo, nostrum ipsa. Reprehenderit temporibus quibusdam dolorem similique doloremque ullam, aliquam, facere eos impedit fugiat consequatur?
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>¿Qué estoy aprendiendo?</h2>
+      <p>
+        Actualmente estoy aprendiendo HTML, CSS y próximamente JavaScript para crear sitios web interactivos, accesibles y con un diseño bonito 🍊
+      </p>
+      <h2>Educacion</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore enim veritatis unde. Voluptatem, soluta. Voluptatibus vitae minima rerum dignissimos laboriosam, cupiditate asperiores voluptate hic. Quae, provident. Labore officiis eius dolore.</p>
+   <form action="https://ucsp.edu.pe/carreras/administracion-negocios/">
+    <button>UCSP</button>
+   </form>
+    </section>
+
+    <section id="proyectos">
+      <h2>proyectos de compañeros</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur modi voluptates consectetur possimus facere a, necessitatibus, quisquam, reprehenderit earum rem. Est sapiente itaque libero maiores illum magnam nisi sequi.</p>
+
+      <div class="cuadrados">
+        <div class="carta">
+          <h3>Berenice</h3>
+          <form action="https://brenda-berenice-rojas-rodriguez.github.io/">
+            <button>click here</button>
+          </form>
+        </div>
+         <div class="carta">
+          <h3>Chino</h3>
+          <form action="https://christopher110011.github.io/mipagina/">
+            <button>click here</button>
+          </form>
+        </div>
+         <div class="carta">
+          <h3>Maria</h3>
+          <form action="https://mariapazgonzalesleon.github.io/">
+            <button>click here</button>
+          </form>
+        </div>
+         <div class="carta">
+          <h3>Alesandra</h3>
+          <form action="https://mariaquintog.github.io/">
+            <button>click here</button>
+          </form>
+        </div>
+         
+      </div>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="cuadrados">
+        <div class="carta">
+          <form action="https://www.instagram.com/nara_uvu/">
+          <button>Instagram</button>
+          </form>
+        </div>
+        <div class="carta">
+          <form action="https://www.linkedin.com/in/topacio-kancha-vilca-b59ba8355">
+            <button>LinkedIn</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Mi Primera Página Web. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
